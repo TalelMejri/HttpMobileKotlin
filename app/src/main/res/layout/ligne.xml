@@ -17,23 +17,23 @@
             android:id="@+id/code"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textSize="15dp"
             android:layout_marginBottom="8dp"
             android:layout_marginLeft="30dp"/>
         <TextView
             android:id="@+id/intut"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="15dp"
             android:layout_marginBottom="4dp"
-            android:layout_marginLeft="80dp"/>
+            android:layout_marginLeft="20dp"/>
 
         <TextView
             android:id="@+id/spec"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="15dp"
             android:layout_marginBottom="4dp"
-            android:layout_marginLeft="110dp"/>
+            android:layout_marginLeft="10dp"/>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

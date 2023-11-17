@@ -8,7 +8,6 @@ import retrofit2.http.POST
 import retrofit2.http.PUT
 import retrofit2.http.Path
 
-
 interface ApiService {
     @GET("/offre")
     suspend fun getOffres(): Response<MutableList<offre>>
@@ -17,7 +16,7 @@ interface ApiService {
     suspend fun getOffreById(@Path("id") id:Int): Response<offre>
 
     @DELETE("/offre/{id}")
-    suspend fun deleteById(@Path("id") id:Int);
+    suspend fun deleteById(@Path("id") id:Int)
 
     @POST("/offre")
     suspend fun AddOffre(@Body offre: offre)

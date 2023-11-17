@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
+    android:layout_gravity="center"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="409dp"
-        android:id="@+id/recyle"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp"
-        tools:ignore="MissingConstraints" />
+        android:id="@+id/recyle"
+        android:layout_weight="1"
+        />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/empty_card"
@@ -24,17 +24,58 @@
         android:layout_gravity="center"
         android:layout_margin="25dp"
         android:clickable="true">
-
         <TextView
             android:id="@+id/code"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
             android:layout_marginLeft="150dp"
+            android:layout_marginBottom="8dp"
             android:text="No Offres"
             android:textSize="18sp"
             android:textStyle="bold" />
-
     </androidx.cardview.widget.CardView>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content">
+
+-->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/Add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="AddOffre"
+            app:srcCompat="@drawable/baseline_add_24" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:clickable="true"
+            android:onClick="Delete"
+            app:srcCompat="@drawable/baseline_delete_24" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/Update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="80dp"
+            android:clickable="true"
+            android:onClick="Update"
+            app:srcCompat="@drawable/baseline_edit_24" />
+
+    </LinearLayout>
+
 
 </LinearLayout>
